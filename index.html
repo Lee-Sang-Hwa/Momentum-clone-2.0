@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vanilla Javascript</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="js-clock">
+      <h1>00:00</h1>
+    </div>
+    <div class="container-weather">
+      <i class="fas fa-temperature-high"></i>
+      <span class="js-weather"></span>
+      <i class="fas fa-map-marker-alt"></i>
+      <span class="js-location"></span>
+    </div>
+    <form class="js-form form">
+      <input type="text" class="form__empty" placeholder="Name" />
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+    <form class="js-toDoForm">
+      <input
+        type="text"
+        class="todoform__empty"
+        placeholder="✍🏻To Do Things✍🏻"
+      />
+    </form>
+    <div class="container-todolist">
+      <ul class="js-toDoList"></ul>
+    </div>
+    <script src="clock.js"></script>
+    <script src="gretting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
