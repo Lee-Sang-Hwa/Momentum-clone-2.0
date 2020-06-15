@@ -13,31 +13,48 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
+    <div class="js-date">
+      <div>0000-00-00</div>
     </div>
+    <div class="js-clock">
+      <div>00:00</div>
+    </div>
+
     <div class="container-weather">
       <i class="fas fa-temperature-high"></i>
       <span class="js-weather"></span>
       <i class="fas fa-map-marker-alt"></i>
       <span class="js-location"></span>
     </div>
+
     <form class="js-form form">
-      <input type="text" class="form__empty" placeholder="Name" />
+      <input type="text" class="form__empty" placeholder="🌞Name🌞" />
     </form>
+
     <h4 class="js-greetings greetings"></h4>
+
     <form class="js-toDoForm">
       <input
         type="text"
         class="todoform__empty"
-        placeholder="✍🏻To Do Things✍🏻"
+        placeholder="✍🏻 To Do Things ✍🏻"
       />
     </form>
+
     <div class="container-todolist">
-      <ul class="js-toDoList"></ul>
+      <div>
+        <h3>[ Pending ]</h3>
+        <ul id="js-pending"></ul>
+      </div>
+      <div>
+        <h3>[ Finished ]</h3>
+        <ul id="js-finished"></ul>
+      </div>
     </div>
+
+    <script src="date.js"></script>
     <script src="clock.js"></script>
-    <script src="gretting.js"></script>
+    <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
